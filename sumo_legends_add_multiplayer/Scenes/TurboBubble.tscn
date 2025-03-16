@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpgo7xtc7r0yb"]
+
+[ext_resource type="Material" uid="uid://c2uknhyj4vo6t" path="res://Assets/particles/turbo_bubble.tres" id="1_wotxn"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_dib5r"]
+radius = 0.25
+height = 0.5
+radial_segments = 16
+rings = 8
+
+[node name="TurboBubble" type="Node3D"]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+emitting = false
+amount = 24
+lifetime = 1.25
+one_shot = true
+local_coords = true
+draw_order = 3
+process_material = ExtResource("1_wotxn")
+draw_pass_1 = SubResource("SphereMesh_dib5r")

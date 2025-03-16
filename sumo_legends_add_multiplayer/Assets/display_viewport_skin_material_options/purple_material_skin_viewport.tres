@@ -1,0 +1,4 @@
+[gd_resource type="ViewportTexture" format=3 uid="uid://c3q1agqvfqjvy"]
+
+[resource]
+viewport_path = NodePath("Material_Skin_Options_Display_Viewport/Purple_Material_Option_Viewport")

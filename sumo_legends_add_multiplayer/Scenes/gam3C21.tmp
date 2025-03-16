@@ -1,0 +1,115 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdhwc7rxsu3u4"]
+
+[ext_resource type="Script" path="res://Code/game_start_camera.gd" id="1_ecxgm"]
+[ext_resource type="Script" path="res://Scenes/trigger_3d_sumo_camera.gd" id="2_nluq3"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_pmpt1"]
+
+[node name="Game_Start_Menu" type="Node2D"]
+
+[node name="Start_Menu_Screen_Camera" type="Camera2D" parent="."]
+script = ExtResource("1_ecxgm")
+
+[node name="Menu User Interface" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Menu_Solid_Color_Background" type="PanelContainer" parent="Menu User Interface"]
+material = SubResource("CanvasItemMaterial_pmpt1")
+layout_mode = 0
+offset_left = -960.0
+offset_top = -540.0
+offset_right = 960.0
+offset_bottom = 540.0
+
+[node name="Rally_Enable_Disable" type="CheckBox" parent="Menu User Interface"]
+top_level = true
+layout_mode = 2
+offset_left = 19.0
+offset_top = 185.0
+offset_right = 138.0
+offset_bottom = 216.0
+scale = Vector2(4, 4)
+text = "Rally Ability"
+
+[node name="Rotating_Platform_Enable_Disable" type="CheckBox" parent="Menu User Interface"]
+top_level = true
+layout_mode = 2
+offset_left = 23.0
+offset_top = 29.0
+offset_right = 164.0
+offset_bottom = 60.0
+scale = Vector2(4, 4)
+text = "Rotating Stage"
+
+[node name="Disappearing_Platforms_Enable_Disable" type="CheckBox" parent="Menu User Interface"]
+top_level = true
+layout_mode = 0
+offset_left = 24.0
+offset_top = -95.0
+offset_right = 227.0
+offset_bottom = -64.0
+scale = Vector2(4, 4)
+text = "Disappearing Platform"
+
+[node name="Player_Ball_Count_Slider" type="HSlider" parent="Menu User Interface"]
+top_level = true
+layout_mode = 2
+offset_left = 78.0
+offset_top = 356.0
+offset_right = 278.0
+offset_bottom = 386.0
+scale = Vector2(3, 3)
+
+[node name="Ball_Count_Label" type="Label" parent="Menu User Interface"]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 304.0
+offset_right = 283.0
+offset_bottom = 327.0
+scale = Vector2(3, 3)
+text = "BALL CUSTOM NUMBER"
+
+[node name="Weather_Effects_Enable_Disable" type="CheckBox" parent="Menu User Interface"]
+top_level = true
+layout_mode = 0
+offset_left = 29.0
+offset_top = -198.0
+offset_right = 232.0
+offset_bottom = -167.0
+scale = Vector2(4, 4)
+text = "Weather"
+
+[node name="Double_Jump_Enable_Disable" type="CheckBox" parent="Menu User Interface"]
+top_level = true
+layout_mode = 0
+offset_left = 32.0
+offset_top = -301.0
+offset_right = 213.0
+offset_bottom = -270.0
+scale = Vector2(4, 4)
+text = "Double Jump Ability"
+
+[node name="Scatter_Ability_Enable_Disable" type="CheckBox" parent="Menu User Interface"]
+top_level = true
+layout_mode = 0
+offset_left = 35.0
+offset_top = -372.0
+offset_right = 216.0
+offset_bottom = -341.0
+scale = Vector2(4, 4)
+text = "Scatter Ability"
+
+[node name="Start_Game_Button" type="Button" parent="Menu User Interface"]
+layout_mode = 0
+offset_left = 57.0
+offset_top = -472.0
+offset_right = 163.0
+offset_bottom = -441.0
+scale = Vector2(3, 3)
+text = "START GAME"
+script = ExtResource("2_nluq3")
+
+[connection signal="pressed" from="Menu User Interface/Start_Game_Button" to="Menu User Interface/Start_Game_Button" method="_on_button_pressed_3d_camera_trigger"]

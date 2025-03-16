@@ -1,0 +1,84 @@
+[gd_scene load_steps=10 format=3 uid="uid://f4msimavm3wm"]
+
+[ext_resource type="Script" path="res://ball_control.gd" id="1_a0qdc"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_yxkqi"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8hdn3"]
+size = Vector3(100, 1, 100)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4ss4t"]
+size = Vector3(100, 1, 100)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iyeli"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_p4xnt"]
+material = SubResource("StandardMaterial3D_iyeli")
+size = Vector3(3, 3, 3)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_d1y38"]
+friction = 0.5
+bounce = 0.5
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_vdsce"]
+radius = 3.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_qpspy"]
+radius = 3.0
+height = 6.0
+
+[node name="Main3D" type="Node3D"]
+
+[node name="Floor" type="Node3D" parent="."]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Floor"]
+physics_material_override = SubResource("PhysicsMaterial_yxkqi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor/StaticBody3D"]
+shape = SubResource("BoxShape3D_8hdn3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor/StaticBody3D"]
+mesh = SubResource("BoxMesh_4ss4t")
+
+[node name="LIGHT" type="Node3D" parent="."]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="LIGHT"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.9848, 7.40332, 0)
+light_energy = 16.0
+light_indirect_energy = 1.12
+omni_range = 101.461
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="Box" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.3197, 2.0099, -31.0887)
+mesh = SubResource("BoxMesh_p4xnt")
+
+[node name="Player" type="Node3D" parent="."]
+
+[node name="Ball_Rigid_Body_3D" type="RigidBody3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.491, 0)
+physics_material_override = SubResource("PhysicsMaterial_d1y38")
+script = ExtResource("1_a0qdc")
+
+[node name="Ball_Collision_Shape_3D" type="CollisionShape3D" parent="Player/Ball_Rigid_Body_3D"]
+shape = SubResource("SphereShape3D_vdsce")
+
+[node name="Ball_3D_Mesh" type="MeshInstance3D" parent="Player/Ball_Rigid_Body_3D"]
+mesh = SubResource("SphereMesh_qpspy")
+
+[node name="FirstPersonCamera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.908, 3.022, -0.009)
+fov = 60.0
+
+[node name="ZOOM_FirstPersonCamera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.90788, 3.02239, -0.0091095)
+fov = 15.0
+
+[node name="TopDownCamera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(-4.37114e-08, 1, 0, 4.37114e-08, 1.91069e-15, 1, 1, 4.37114e-08, -4.37114e-08, -1.22986, 23.2611, -0.0091095)
+fov = 60.0
+
+[node name="ForwardThirdPersonCamera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -21.4998, 10.5488, -0.00143099)
+fov = 60.0

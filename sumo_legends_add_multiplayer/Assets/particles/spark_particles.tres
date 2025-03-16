@@ -1,0 +1,8 @@
+[gd_resource type="ParticleProcessMaterial" format=3 uid="uid://yx1nyimctw30"]
+
+[resource]
+lifetime_randomness = 1.0
+emission_shape = 1
+emission_sphere_radius = 8.0
+initial_velocity_min = 5.0
+initial_velocity_max = 10.0

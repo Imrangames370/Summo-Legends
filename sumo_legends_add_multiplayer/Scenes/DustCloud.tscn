@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bei224i8huxhc"]
+
+[ext_resource type="Material" uid="uid://dm2yb5dolmsxd" path="res://Assets/particles/dust_cloud_process_material.tres" id="1_018si"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_gmlo2"]
+radius = 0.25
+height = 0.5
+radial_segments = 16
+rings = 8
+
+[node name="DustCloud" type="Node3D"]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+emitting = false
+amount = 20
+one_shot = true
+explosiveness = 1.0
+process_material = ExtResource("1_018si")
+draw_pass_1 = SubResource("SphereMesh_gmlo2")

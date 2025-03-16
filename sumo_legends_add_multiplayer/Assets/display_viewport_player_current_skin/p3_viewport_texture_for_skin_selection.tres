@@ -1,0 +1,4 @@
+[gd_resource type="ViewportTexture" format=3 uid="uid://c02a5nyg7uux7"]
+
+[resource]
+viewport_path = NodePath("Viewports/P3_Material_Menu_Display_Viewport")

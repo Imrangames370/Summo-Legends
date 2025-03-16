@@ -1,0 +1,1914 @@
+[gd_scene load_steps=111 format=3 uid="uid://c1y3nvw8d2oti"]
+
+[ext_resource type="Script" uid="uid://dahmt3rdse5ou" path="res://Code/top_down_camera_3d.gd" id="1_6mgqm"]
+[ext_resource type="Texture2D" uid="uid://b4dkrjbrxkijo" path="res://Assets/pretty_light_blue_sky_texture.jpg" id="2_ri0a6"]
+[ext_resource type="Script" uid="uid://dyjn7poyg0wcu" path="res://Code/player_manager/player_manager.gd" id="3_ujpmc"]
+[ext_resource type="Script" uid="uid://dacju8v4sj4oo" path="res://Code/player_manager/player_main.gd" id="4_0th31"]
+[ext_resource type="Script" uid="uid://bhn3qhhfb6l6b" path="res://Code/player_manager/player_2.gd" id="5_7o6ra"]
+[ext_resource type="Script" uid="uid://dweg4dy2slfwd" path="res://Code/player_manager/player_3_controller.gd" id="6_ljqs5"]
+[ext_resource type="Script" uid="uid://xlk6a30t3diy" path="res://Code/player_manager/player_1_controller.gd" id="6_rlv6g"]
+[ext_resource type="Script" uid="uid://bdwcffnn0vf60" path="res://Code/player_manager/player_2_controller.gd" id="7_exl6l"]
+[ext_resource type="Script" uid="uid://bt3lgwmr53fos" path="res://Code/player_manager/player_4_controller.gd" id="7_y03uq"]
+[ext_resource type="Script" uid="uid://ddn74rlqodccs" path="res://Code/primary custom stage/sumo_ring.gd" id="8_5hvpv"]
+[ext_resource type="Script" uid="uid://1ftyi00y1yt4" path="res://Code/player_manager/player_5_controller.gd" id="8_un881"]
+[ext_resource type="Script" uid="uid://dyyai7gqdvyu4" path="res://Code/player_manager/player_6_controller.gd" id="9_73r3h"]
+[ext_resource type="Script" uid="uid://cpvose4cu5kae" path="res://Code/variable management/3d_variable_dock.gd" id="9_ei47v"]
+[ext_resource type="Script" uid="uid://dgh7gvbpnwua6" path="res://Code/player_manager/player_7_controller.gd" id="10_ptdgm"]
+[ext_resource type="Script" uid="uid://qx05s6a0fjdp" path="res://Code/player_manager/player_8_controller.gd" id="11_0wnni"]
+[ext_resource type="Script" uid="uid://b8cgn850ta3hj" path="res://Code/game_start_camera.gd" id="11_5vnjh"]
+[ext_resource type="Script" uid="uid://wobc2ffeiki2" path="res://Code/name_scripts/player_3_name_editor.gd" id="11_ckn5m"]
+[ext_resource type="Script" uid="uid://dlm82vq5juypp" path="res://Code/name_scripts/player_4_name_editor.gd" id="12_qq65o"]
+[ext_resource type="Texture2D" uid="uid://ccjqkvpqjdj7g" path="res://Assets/black_menu_background.png" id="12_rrdq3"]
+[ext_resource type="Script" uid="uid://batr78cqtfhbn" path="res://Code/name_scripts/player_1_name_editor.gd" id="13_exy1m"]
+[ext_resource type="Script" uid="uid://dd0nj7uowt5f0" path="res://Code/name_scripts/player_5_name_editor.gd" id="13_ljqs5"]
+[ext_resource type="Script" uid="uid://b3p8xfwy5dxf0" path="res://Code/name_scripts/player_2_name_editor.gd" id="14_merfw"]
+[ext_resource type="Script" uid="uid://dk4orodcx8utm" path="res://Code/name_scripts/player_6_name_editor.gd" id="14_y03uq"]
+[ext_resource type="Script" uid="uid://clml1hak3n5aa" path="res://Code/skin_scripts/player_skin_interface.gd" id="15_dbv58"]
+[ext_resource type="Script" uid="uid://b3mndpvutuj8b" path="res://Code/name_scripts/player_7_name_editor.gd" id="15_un881"]
+[ext_resource type="Script" uid="uid://dgb5cjq2s0hpx" path="res://Code/name_scripts/player_8_name_editor.gd" id="16_a0edu"]
+[ext_resource type="Texture2D" uid="uid://caisqji7e1gi8" path="res://Assets/display_viewport_player_current_skin/p1_viewport_texture_for_skin_selection.tres" id="16_rajss"]
+[ext_resource type="Texture2D" uid="uid://dhhqse0rrhn10" path="res://Assets/display_viewport_player_current_skin/p2_viewport_texture_for_skin_selection.tres" id="17_d15id"]
+[ext_resource type="Script" uid="uid://cwur6abuno3bh" path="res://Code/name_scripts/player_9_name_editor.gd" id="17_rlhm1"]
+[ext_resource type="Script" uid="uid://dxfmuwbln16ud" path="res://Code/name_scripts/player_10_name_editor.gd" id="18_73r3h"]
+[ext_resource type="Texture2D" uid="uid://c02a5nyg7uux7" path="res://Assets/display_viewport_player_current_skin/p3_viewport_texture_for_skin_selection.tres" id="18_vjohd"]
+[ext_resource type="Texture2D" uid="uid://cxk5hko0mx320" path="res://Assets/display_viewport_player_current_skin/p4_viewport_texture_for_skin_selection.tres" id="19_507oj"]
+[ext_resource type="Texture2D" uid="uid://by2mq7edjpvn1" path="res://Assets/display_viewport_player_current_skin/p5_viewport_texture_for_skin_selection.tres" id="20_mkuv2"]
+[ext_resource type="Texture2D" uid="uid://cxiphmqc1fk4f" path="res://Assets/display_viewport_player_current_skin/p6_viewport_texture_for_skin_selection.tres" id="21_aqinu"]
+[ext_resource type="Texture2D" uid="uid://bvnjujvtp638f" path="res://Assets/display_viewport_player_current_skin/p7_viewport_texture_for_skin_selection.tres" id="22_xg13g"]
+[ext_resource type="Texture2D" uid="uid://bptdcvbp307xe" path="res://Assets/display_viewport_player_current_skin/p8_viewport_texture_for_skin_selection.tres" id="23_ckn5m"]
+[ext_resource type="Texture2D" uid="uid://chkmq56aj6ysa" path="res://Assets/display_viewport_player_current_skin/p9_viewport_texture_for_skin_selection.tres" id="24_w4vqn"]
+[ext_resource type="Texture2D" uid="uid://dfury3b1e0kms" path="res://Assets/display_viewport_player_current_skin/p10_viewport_texture_for_skin_selection.tres" id="25_886uv"]
+[ext_resource type="Script" uid="uid://c8uuspab82w8r" path="res://Code/slider_scripts/player_ball_count_slider.gd" id="26_gqv7f"]
+[ext_resource type="Script" uid="uid://stev5hmkv7pa" path="res://Code/slider_scripts/player_lives_slider.gd" id="27_1n5j2"]
+[ext_resource type="Script" uid="uid://d2f4i20wndwdd" path="res://Code/slider_scripts/ring_radius_size_slider.gd" id="28_i217f"]
+[ext_resource type="Script" uid="uid://gvn6covapnhp" path="res://Code/slider_scripts/segments_slider.gd" id="29_2811s"]
+[ext_resource type="Script" uid="uid://bgr55vx4c4l7g" path="res://Code/slider_scripts/camera_height_slider.gd" id="30_qq65o"]
+[ext_resource type="Script" uid="uid://cpiv4en6upjkd" path="res://Code/slider_scripts/platform_destroy_speed_slider.gd" id="31_ljqs5"]
+[ext_resource type="Script" uid="uid://dp7dntwe3dv3h" path="res://Code/slider_scripts/platform_destroy_odds.gd" id="32_y03uq"]
+[ext_resource type="Texture2D" uid="uid://dlr11da7s2wub" path="res://Assets/display_viewport_skin_material_options/red_material_skin_viewport.tres" id="33_5vnjh"]
+[ext_resource type="Script" uid="uid://b5otu6q4p0gye" path="res://Code/slider_scripts/Energy_Orb_Spawn_Rate_Slider.gd" id="33_un881"]
+[ext_resource type="StyleBox" uid="uid://7xbsmvsde8hn" path="res://Assets/StyleBoxes/Hover_Style_Box_Skin_Material_Selector.tres" id="33_xg13g"]
+[ext_resource type="Script" uid="uid://1ijs45oo8t8i" path="res://Code/checkbox_scripts/rotating_platform_enable_disable.gd" id="34_a0edu"]
+[ext_resource type="StyleBox" uid="uid://bbag323et68br" path="res://Assets/StyleBoxes/Normal_Style_Box_Skin_Material_Selector.tres" id="34_ckn5m"]
+[ext_resource type="Texture2D" uid="uid://csffglqpj8w4x" path="res://Assets/display_viewport_skin_material_options/green_material_skin_viewport.tres" id="34_mkuv2"]
+[ext_resource type="Texture2D" uid="uid://7yfb63w1ralp" path="res://Assets/display_viewport_skin_material_options/yellow_material_skin_viewport.tres" id="35_aqinu"]
+[ext_resource type="Script" uid="uid://d3b3e8ukbhcgr" path="res://Code/checkbox_scripts/player_platform_control_enable_disable.gd" id="35_rlhm1"]
+[ext_resource type="StyleBox" uid="uid://b6xw8qcttgfcm" path="res://Assets/StyleBoxes/menu_button_hover_style_box.tres" id="36_0wnni"]
+[ext_resource type="Script" uid="uid://cak8waegu7qd6" path="res://Code/checkbox_scripts/stealth_enable_disable.gd" id="36_73r3h"]
+[ext_resource type="Material" uid="uid://bqh0tbhbpdrwj" path="res://Assets/player_solid_color_skins/red_material.tres" id="36_ixoog"]
+[ext_resource type="Texture2D" uid="uid://bm46jqwhfmrmp" path="res://Assets/display_viewport_skin_material_options/dark_blue_material_skin_viewport.tres" id="36_xg13g"]
+[ext_resource type="Material" uid="uid://bvggsvkp4c2ks" path="res://Assets/player_solid_color_skins/green_material.tres" id="37_5vnjh"]
+[ext_resource type="Texture2D" uid="uid://w53eackerh85" path="res://Assets/display_viewport_skin_material_options/orange_material_skin_viewport.tres" id="37_ckn5m"]
+[ext_resource type="StyleBox" uid="uid://j6ffpvt7657q" path="res://Assets/StyleBoxes/menu_button_normal_style_box.tres" id="37_tu34c"]
+[ext_resource type="Material" uid="uid://dnesmhiby3i1x" path="res://Assets/player_solid_color_skins/yellow_material.tres" id="38_rrdq3"]
+[ext_resource type="Texture2D" uid="uid://c3q1agqvfqjvy" path="res://Assets/display_viewport_skin_material_options/purple_material_skin_viewport.tres" id="38_w4vqn"]
+[ext_resource type="Texture2D" uid="uid://djbjgyr785dvl" path="res://Assets/display_viewport_skin_material_options/white_material_skin_viewport.tres" id="39_886uv"]
+[ext_resource type="Material" uid="uid://dsr8ru0cippr3" path="res://Assets/player_solid_color_skins/dark_blue_material.tres" id="39_exy1m"]
+[ext_resource type="Script" uid="uid://dbp64k3wlemmt" path="res://Code/slider_scripts/ball_bounce_slider.gd" id="39_tu34c"]
+[ext_resource type="Texture2D" uid="uid://b6wn4ilqpofjn" path="res://Assets/display_viewport_skin_material_options/black_material_skin_viewport.tres" id="40_gqv7f"]
+[ext_resource type="Material" uid="uid://du2e5u6kcs6up" path="res://Assets/player_solid_color_skins/orange_material.tres" id="40_merfw"]
+[ext_resource type="Texture2D" uid="uid://7qbn844hn148" path="res://Assets/display_viewport_skin_material_options/light_pink_material_skin_viewport.tres" id="41_1n5j2"]
+[ext_resource type="Material" uid="uid://beatu04r80whf" path="res://Assets/player_solid_color_skins/purple_material.tres" id="41_dbv58"]
+[ext_resource type="Texture2D" uid="uid://d3cgufwrq4rgg" path="res://Assets/display_viewport_skin_material_options/cyan_material_skin_viewport.tres" id="42_i217f"]
+[ext_resource type="Material" uid="uid://bm685fceop8s3" path="res://Assets/player_solid_color_skins/white_material.tres" id="42_rajss"]
+[ext_resource type="Material" uid="uid://cv8x84gxgrdl" path="res://Assets/player_solid_color_skins/cyan_material.tres" id="43_d15id"]
+[ext_resource type="Material" uid="uid://u2dpcuvpca31" path="res://Assets/player_solid_color_skins/black_material.tres" id="44_vjohd"]
+[ext_resource type="Material" uid="uid://n80awq21keuc" path="res://Assets/player_solid_color_skins/light_pink_material.tres" id="45_507oj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ujpmc"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+draw_center = false
+border_color = Color(0.172549, 0.172549, 0.172549, 0)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+corner_detail = 20
+shadow_color = Color(0.259294, 0.259294, 0.259294, 0.6)
+shadow_size = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gehln"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0th31"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+draw_center = false
+border_color = Color(0.172549, 0.172549, 0.172549, 0)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+corner_detail = 20
+shadow_color = Color(0.258824, 0.258824, 0.258824, 0.6)
+shadow_size = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6mgqm"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ri0a6"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+draw_center = false
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wxt5k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_73r3h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ptdgm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0wnni"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tu34c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cg5lj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gnxdr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dy8hv"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_va7bi"]
+panorama = ExtResource("2_ri0a6")
+
+[sub_resource type="Sky" id="Sky_knuj1"]
+sky_material = SubResource("PanoramaSkyMaterial_va7bi")
+radiance_size = 6
+
+[sub_resource type="Environment" id="Environment_8x57o"]
+background_mode = 2
+sky = SubResource("Sky_knuj1")
+glow_enabled = true
+glow_intensity = 1.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_6mgqm"]
+radius = 0.532
+height = 0.01
+
+[sub_resource type="SphereMesh" id="SphereMesh_gehln"]
+radius = 0.532
+height = 0.01
+
+[sub_resource type="SphereMesh" id="SphereMesh_ri0a6"]
+radius = 0.532
+height = 0.01
+
+[sub_resource type="SphereMesh" id="SphereMesh_ujpmc"]
+radius = 0.532
+height = 0.01
+
+[sub_resource type="SphereMesh" id="SphereMesh_0th31"]
+radius = 0.532
+height = 0.01
+
+[sub_resource type="SphereMesh" id="SphereMesh_7o6ra"]
+radius = 0.532
+height = 0.01
+
+[sub_resource type="SphereMesh" id="SphereMesh_rlv6g"]
+radius = 0.532
+height = 0.01
+
+[sub_resource type="SphereMesh" id="SphereMesh_exl6l"]
+radius = 0.532
+height = 0.01
+
+[sub_resource type="SphereMesh" id="SphereMesh_5hvpv"]
+radius = 0.532
+height = 0.01
+
+[sub_resource type="SphereMesh" id="SphereMesh_ei47v"]
+radius = 0.532
+height = 0.01
+
+[sub_resource type="SphereMesh" id="SphereMesh_mkuv2"]
+material = ExtResource("36_ixoog")
+radius = 128.0
+height = 0.01
+radial_segments = 256
+rings = 128
+
+[sub_resource type="SphereMesh" id="SphereMesh_aqinu"]
+material = ExtResource("37_5vnjh")
+radius = 128.0
+height = 0.01
+radial_segments = 256
+rings = 128
+
+[sub_resource type="SphereMesh" id="SphereMesh_xg13g"]
+material = ExtResource("38_rrdq3")
+radius = 128.0
+height = 0.01
+radial_segments = 256
+rings = 128
+
+[sub_resource type="SphereMesh" id="SphereMesh_ckn5m"]
+material = ExtResource("39_exy1m")
+radius = 128.0
+height = 0.01
+radial_segments = 256
+rings = 128
+
+[sub_resource type="SphereMesh" id="SphereMesh_w4vqn"]
+material = ExtResource("40_merfw")
+radius = 128.0
+height = 0.01
+radial_segments = 256
+rings = 128
+
+[sub_resource type="SphereMesh" id="SphereMesh_886uv"]
+material = ExtResource("41_dbv58")
+radius = 128.0
+height = 0.01
+radial_segments = 256
+rings = 128
+
+[sub_resource type="SphereMesh" id="SphereMesh_gqv7f"]
+material = ExtResource("42_rajss")
+radius = 128.0
+height = 0.01
+radial_segments = 256
+rings = 128
+
+[sub_resource type="SphereMesh" id="SphereMesh_1n5j2"]
+material = ExtResource("43_d15id")
+radius = 128.0
+height = 0.01
+radial_segments = 256
+rings = 128
+
+[sub_resource type="SphereMesh" id="SphereMesh_i217f"]
+material = ExtResource("44_vjohd")
+radius = 128.0
+height = 0.01
+radial_segments = 256
+rings = 128
+
+[sub_resource type="SphereMesh" id="SphereMesh_2811s"]
+material = ExtResource("45_507oj")
+radius = 128.0
+height = 0.01
+radial_segments = 256
+rings = 128
+
+[node name="Neutral_Node_Main" type="Node"]
+
+[node name="Player_Names" type="Node" parent="."]
+
+[node name="Player_Manager" type="Node" parent="."]
+script = ExtResource("3_ujpmc")
+
+[node name="Player_Main_Keyboard" type="Node3D" parent="Player_Manager"]
+script = ExtResource("4_0th31")
+
+[node name="Second_Player_Keyboard" type="Node3D" parent="Player_Manager"]
+script = ExtResource("5_7o6ra")
+
+[node name="Player_1_Controller" type="Node3D" parent="Player_Manager"]
+script = ExtResource("6_rlv6g")
+
+[node name="Player_2_Controller" type="Node3D" parent="Player_Manager"]
+script = ExtResource("7_exl6l")
+
+[node name="Player_3_Controller" type="Node3D" parent="Player_Manager"]
+script = ExtResource("6_ljqs5")
+
+[node name="Player_4_Controller" type="Node3D" parent="Player_Manager"]
+script = ExtResource("7_y03uq")
+
+[node name="Player_5_Controller" type="Node3D" parent="Player_Manager"]
+script = ExtResource("8_un881")
+
+[node name="Player_6_Controller" type="Node3D" parent="Player_Manager"]
+script = ExtResource("9_73r3h")
+
+[node name="Player_7_Controller" type="Node3D" parent="Player_Manager"]
+script = ExtResource("10_ptdgm")
+
+[node name="Player_8_Controller" type="Node3D" parent="Player_Manager"]
+script = ExtResource("11_0wnni")
+
+[node name="SUMO SECTION" type="Node3D" parent="."]
+script = ExtResource("8_5hvpv")
+
+[node name="3D_Variable_Dock" type="Node3D" parent="."]
+script = ExtResource("9_ei47v")
+
+[node name="Background Menu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Background Menu"]
+z_index = -4
+texture = ExtResource("12_rrdq3")
+
+[node name="Menu_User_Interface" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Game_Base_Screen" type="Control" parent="Menu_User_Interface"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Settings_Button" type="Button" parent="Menu_User_Interface/Game_Base_Screen"]
+layout_mode = 0
+offset_left = -292.0
+offset_top = -510.0
+offset_right = -186.0
+offset_bottom = -479.0
+scale = Vector2(3, 3)
+theme_override_styles/hover = ExtResource("36_0wnni")
+theme_override_styles/normal = ExtResource("37_tu34c")
+text = "SETTINGS"
+
+[node name="Start_Game_Button" type="Button" parent="Menu_User_Interface/Game_Base_Screen"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = -513.0
+offset_right = 142.0
+offset_bottom = -482.0
+scale = Vector2(3, 3)
+theme_override_styles/hover = ExtResource("36_0wnni")
+theme_override_styles/normal = ExtResource("37_tu34c")
+text = "START GAME"
+
+[node name="Connect_Guide_Button" type="Button" parent="Menu_User_Interface/Game_Base_Screen"]
+layout_mode = 0
+offset_left = -902.0
+offset_top = -513.0
+offset_right = -780.0
+offset_bottom = -482.0
+scale = Vector2(3, 3)
+theme_override_styles/hover = ExtResource("36_0wnni")
+theme_override_styles/normal = ExtResource("37_tu34c")
+text = "HELP"
+
+[node name="Player_1_Name_Editor" type="LineEdit" parent="Menu_User_Interface/Game_Base_Screen"]
+layout_mode = 0
+offset_left = -792.0
+offset_top = -306.0
+offset_right = -670.0
+offset_bottom = -275.0
+scale = Vector2(2, 2)
+placeholder_text = "Player 1 Name"
+script = ExtResource("13_exy1m")
+
+[node name="Player_2_Name_Editor" type="LineEdit" parent="Menu_User_Interface/Game_Base_Screen"]
+layout_mode = 0
+offset_left = -792.0
+offset_top = -226.0
+offset_right = -669.0
+offset_bottom = -195.0
+scale = Vector2(2, 2)
+placeholder_text = "Player 2 Name"
+script = ExtResource("14_merfw")
+
+[node name="Player_3_Name_Editor" type="LineEdit" parent="Menu_User_Interface/Game_Base_Screen"]
+layout_mode = 0
+offset_left = -792.0
+offset_top = -146.0
+offset_right = -669.0
+offset_bottom = -115.0
+scale = Vector2(2, 2)
+placeholder_text = "Player 3 Name"
+script = ExtResource("11_ckn5m")
+
+[node name="Player_4_Name_Editor" type="LineEdit" parent="Menu_User_Interface/Game_Base_Screen"]
+layout_mode = 0
+offset_left = -792.0
+offset_top = -66.0
+offset_right = -669.0
+offset_bottom = -35.0
+scale = Vector2(2, 2)
+placeholder_text = "Player 4 Name"
+script = ExtResource("12_qq65o")
+
+[node name="Player_5_Name_Editor" type="LineEdit" parent="Menu_User_Interface/Game_Base_Screen"]
+layout_mode = 0
+offset_left = -792.0
+offset_top = 14.0
+offset_right = -669.0
+offset_bottom = 45.0
+scale = Vector2(2, 2)
+placeholder_text = "Player 5 Name"
+script = ExtResource("13_ljqs5")
+
+[node name="Player_6_Name_Editor" type="LineEdit" parent="Menu_User_Interface/Game_Base_Screen"]
+layout_mode = 0
+offset_left = -792.0
+offset_top = 94.0
+offset_right = -669.0
+offset_bottom = 125.0
+scale = Vector2(2, 2)
+placeholder_text = "Player 6 Name"
+script = ExtResource("14_y03uq")
+
+[node name="Player_7_Name_Editor" type="LineEdit" parent="Menu_User_Interface/Game_Base_Screen"]
+layout_mode = 0
+offset_left = -792.0
+offset_top = 174.0
+offset_right = -669.0
+offset_bottom = 205.0
+scale = Vector2(2, 2)
+placeholder_text = "Player 7 Name"
+script = ExtResource("15_un881")
+
+[node name="Player_8_Name_Editor" type="LineEdit" parent="Menu_User_Interface/Game_Base_Screen"]
+layout_mode = 0
+offset_left = -792.0
+offset_top = 254.0
+offset_right = -669.0
+offset_bottom = 285.0
+scale = Vector2(2, 2)
+placeholder_text = "Player 8 Name"
+script = ExtResource("16_a0edu")
+
+[node name="Player_9_Name_Editor" type="LineEdit" parent="Menu_User_Interface/Game_Base_Screen"]
+layout_mode = 0
+offset_left = -792.0
+offset_top = 334.0
+offset_right = -669.0
+offset_bottom = 365.0
+scale = Vector2(2, 2)
+placeholder_text = "Player 9 Name"
+script = ExtResource("17_rlhm1")
+
+[node name="Player_10_Name_Editor" type="LineEdit" parent="Menu_User_Interface/Game_Base_Screen"]
+layout_mode = 0
+offset_left = -792.0
+offset_top = 414.0
+offset_right = -669.0
+offset_bottom = 445.0
+scale = Vector2(2, 2)
+placeholder_text = "Player 10 Name"
+script = ExtResource("18_73r3h")
+
+[node name="Player_Skin_Interface_Base_Screen" type="Control" parent="Menu_User_Interface/Game_Base_Screen"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("15_dbv58")
+
+[node name="Player_1_Select_Skin_Button" type="Button" parent="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen"]
+layout_mode = 0
+offset_left = -532.0
+offset_top = -308.0
+offset_right = -468.0
+offset_bottom = -244.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_ujpmc")
+theme_override_styles/normal = SubResource("StyleBoxFlat_gehln")
+icon = ExtResource("16_rajss")
+icon_alignment = 1
+
+[node name="Player_2_Select_Skin_Button" type="Button" parent="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen"]
+layout_mode = 0
+offset_left = -532.0
+offset_top = -228.0
+offset_right = -468.0
+offset_bottom = -164.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_0th31")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6mgqm")
+icon = ExtResource("17_d15id")
+icon_alignment = 1
+
+[node name="Player_3_Select_Skin_Button" type="Button" parent="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen"]
+layout_mode = 0
+offset_left = -532.0
+offset_top = -148.0
+offset_right = -468.0
+offset_bottom = -84.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_0th31")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ri0a6")
+icon = ExtResource("18_vjohd")
+icon_alignment = 1
+
+[node name="Player_4_Select_Skin_Button" type="Button" parent="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen"]
+layout_mode = 0
+offset_left = -532.0
+offset_top = -68.0
+offset_right = -468.0
+offset_bottom = -4.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_0th31")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ri0a6")
+icon = ExtResource("19_507oj")
+icon_alignment = 1
+
+[node name="Player_5_Select_Skin_Button" type="Button" parent="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen"]
+layout_mode = 0
+offset_left = -532.0
+offset_top = 12.0
+offset_right = -468.0
+offset_bottom = 76.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_0th31")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ri0a6")
+icon = ExtResource("20_mkuv2")
+icon_alignment = 1
+
+[node name="Player_6_Select_Skin_Button" type="Button" parent="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen"]
+layout_mode = 0
+offset_left = -532.0
+offset_top = 92.0
+offset_right = -468.0
+offset_bottom = 156.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_0th31")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ri0a6")
+icon = ExtResource("21_aqinu")
+icon_alignment = 1
+
+[node name="Player_7_Select_Skin_Button" type="Button" parent="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen"]
+layout_mode = 0
+offset_left = -532.0
+offset_top = 172.0
+offset_right = -468.0
+offset_bottom = 236.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_0th31")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ri0a6")
+icon = ExtResource("22_xg13g")
+icon_alignment = 1
+
+[node name="Player_8_Select_Skin_Button" type="Button" parent="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen"]
+layout_mode = 0
+offset_left = -532.0
+offset_top = 252.0
+offset_right = -468.0
+offset_bottom = 316.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_0th31")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ri0a6")
+icon = ExtResource("23_ckn5m")
+icon_alignment = 1
+
+[node name="Player_9_Select_Skin_Button" type="Button" parent="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen"]
+layout_mode = 0
+offset_left = -532.0
+offset_top = 332.0
+offset_right = -468.0
+offset_bottom = 396.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_0th31")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ri0a6")
+icon = ExtResource("24_w4vqn")
+icon_alignment = 1
+
+[node name="Player_10_Select_Skin_Button" type="Button" parent="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen"]
+layout_mode = 0
+offset_left = -532.0
+offset_top = 412.0
+offset_right = -468.0
+offset_bottom = 476.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_0th31")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ri0a6")
+icon = ExtResource("25_886uv")
+icon_alignment = 1
+
+[node name="Settings" type="Control" parent="Menu_User_Interface"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Settings_Navigation" type="Control" parent="Menu_User_Interface/Settings"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Go Main Screen" type="Button" parent="Menu_User_Interface/Settings/Settings_Navigation"]
+layout_mode = 0
+offset_left = -420.0
+offset_top = -508.0
+offset_right = -291.0
+offset_bottom = -477.0
+scale = Vector2(3, 3)
+theme_override_styles/hover = ExtResource("36_0wnni")
+theme_override_styles/normal = ExtResource("37_tu34c")
+text = "Go Main Screen"
+
+[node name="Start_Game_Button" type="Button" parent="Menu_User_Interface/Settings/Settings_Navigation"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = -513.0
+offset_right = 142.0
+offset_bottom = -482.0
+scale = Vector2(3, 3)
+theme_override_styles/hover = ExtResource("36_0wnni")
+theme_override_styles/normal = ExtResource("37_tu34c")
+text = "START GAME"
+
+[node name="Ball_Properties" type="Control" parent="Menu_User_Interface/Settings"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Ball_Count_Label" type="Label" parent="Menu_User_Interface/Settings/Ball_Properties"]
+layout_mode = 0
+offset_left = -1932.0
+offset_top = -246.0
+offset_right = -1749.0
+offset_bottom = -223.0
+scale = Vector2(3, 3)
+text = "Balls Per Player"
+
+[node name="Ball_Friction_Label" type="Label" parent="Menu_User_Interface/Settings/Ball_Properties"]
+layout_mode = 0
+offset_left = -1592.0
+offset_top = 419.0
+offset_right = -1409.0
+offset_bottom = 442.0
+scale = Vector2(3, 3)
+text = "Ball Friction"
+
+[node name="Ball_Bounce_Label" type="Label" parent="Menu_User_Interface/Settings/Ball_Properties"]
+layout_mode = 0
+offset_left = -906.0
+offset_top = -179.0
+offset_right = -723.0
+offset_bottom = -156.0
+scale = Vector2(3, 3)
+text = "Bounciness"
+
+[node name="Ball_Gravity_Label" type="Label" parent="Menu_User_Interface/Settings/Ball_Properties"]
+layout_mode = 0
+offset_left = 369.0
+offset_top = -247.0
+offset_right = 552.0
+offset_bottom = -224.0
+scale = Vector2(3, 3)
+text = "Ball Gravity"
+
+[node name="Player_Ball_Speed_Label" type="Label" parent="Menu_User_Interface/Settings/Ball_Properties"]
+layout_mode = 0
+offset_left = -902.0
+offset_top = -528.0
+offset_right = -719.0
+offset_bottom = -505.0
+scale = Vector2(3, 3)
+text = "Player Ball Speed"
+
+[node name="Player_Lives__Label" type="Label" parent="Menu_User_Interface/Settings/Ball_Properties"]
+layout_mode = 0
+offset_left = 387.0
+offset_top = -404.0
+offset_right = 479.0
+offset_bottom = -381.0
+scale = Vector2(3, 3)
+text = "Player Lives"
+
+[node name="Player_Ball_Count_Slider" type="HSlider" parent="Menu_User_Interface/Settings/Ball_Properties"]
+top_level = true
+layout_mode = 2
+offset_left = -1955.0
+offset_top = -207.0
+offset_right = -1755.0
+offset_bottom = -177.0
+scale = Vector2(3, 3)
+min_value = 1.0
+max_value = 1000.0
+value = 1.0
+script = ExtResource("26_gqv7f")
+
+[node name="Player_Ball_Speed_Slider" type="HSlider" parent="Menu_User_Interface/Settings/Ball_Properties"]
+top_level = true
+layout_mode = 0
+offset_left = -922.0
+offset_top = -482.0
+offset_right = -722.0
+offset_bottom = -452.0
+scale = Vector2(3, 3)
+
+[node name="Ball_Friction_Slider" type="HSlider" parent="Menu_User_Interface/Settings/Ball_Properties"]
+top_level = true
+layout_mode = 0
+offset_left = -1603.0
+offset_top = 474.0
+offset_right = -1403.0
+offset_bottom = 504.0
+scale = Vector2(3, 3)
+min_value = 1.0
+max_value = 60.0
+value = 1.0
+
+[node name="Ball_Bounce_Slider" type="HSlider" parent="Menu_User_Interface/Settings/Ball_Properties"]
+top_level = true
+layout_mode = 0
+offset_left = -948.0
+offset_top = -131.0
+offset_right = -748.0
+offset_bottom = -101.0
+scale = Vector2(3, 3)
+max_value = 3.0
+step = 0.05
+value = 1.0
+script = ExtResource("39_tu34c")
+
+[node name="Ball_Gravity_Slider" type="HSlider" parent="Menu_User_Interface/Settings/Ball_Properties"]
+top_level = true
+layout_mode = 0
+offset_left = 352.0
+offset_top = -189.0
+offset_right = 552.0
+offset_bottom = -159.0
+scale = Vector2(3, 3)
+min_value = 1.0
+max_value = 60.0
+value = 1.0
+
+[node name="Player_Lives_Slider" type="HSlider" parent="Menu_User_Interface/Settings/Ball_Properties"]
+top_level = true
+layout_mode = 0
+offset_left = 376.0
+offset_top = -349.0
+offset_right = 576.0
+offset_bottom = -319.0
+scale = Vector2(3, 3)
+min_value = 1.0
+max_value = 25.0
+value = 1.0
+script = ExtResource("27_1n5j2")
+
+[node name="Stage_Properties" type="Control" parent="Menu_User_Interface/Settings"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Ring_Radius_Size_Slider" type="HSlider" parent="Menu_User_Interface/Settings/Stage_Properties"]
+top_level = true
+layout_mode = 0
+offset_left = -936.0
+offset_top = 294.0
+offset_right = -736.0
+offset_bottom = 324.0
+scale = Vector2(3, 3)
+min_value = 10.0
+max_value = 600.0
+value = 45.0
+script = ExtResource("28_i217f")
+
+[node name="Segments_Slider" type="HSlider" parent="Menu_User_Interface/Settings/Stage_Properties"]
+top_level = true
+layout_mode = 0
+offset_left = -948.0
+offset_top = 147.0
+offset_right = -748.0
+offset_bottom = 177.0
+scale = Vector2(3, 3)
+min_value = 1.0
+max_value = 60.0
+value = 1.0
+script = ExtResource("29_2811s")
+
+[node name="Camera_Height_Slider" type="HSlider" parent="Menu_User_Interface/Settings/Stage_Properties"]
+top_level = true
+layout_mode = 0
+offset_left = -944.0
+offset_top = 12.0
+offset_right = -744.0
+offset_bottom = 42.0
+scale = Vector2(3, 3)
+min_value = -300.0
+max_value = 1000.0
+value = 50.0
+script = ExtResource("30_qq65o")
+
+[node name="Match_Timer_Slider" type="HSlider" parent="Menu_User_Interface/Settings/Stage_Properties"]
+top_level = true
+layout_mode = 0
+offset_left = 345.0
+offset_top = -498.0
+offset_right = 545.0
+offset_bottom = -468.0
+scale = Vector2(3, 3)
+min_value = 1.0
+max_value = 60.0
+value = 1.0
+
+[node name="Platform_Destroy_Speed_Slider" type="HSlider" parent="Menu_User_Interface/Settings/Stage_Properties"]
+top_level = true
+layout_mode = 0
+offset_left = 884.0
+offset_top = 421.0
+offset_right = 1084.0
+offset_bottom = 451.0
+rotation = 3.14159
+scale = Vector2(3, 3)
+min_value = 1.0
+max_value = 600.0
+value = 3.0
+script = ExtResource("31_ljqs5")
+
+[node name="Platform_Destroy_Odds" type="HSlider" parent="Menu_User_Interface/Settings/Stage_Properties"]
+top_level = true
+layout_mode = 0
+offset_left = 337.0
+offset_top = 194.0
+offset_right = 537.0
+offset_bottom = 224.0
+scale = Vector2(3, 3)
+value = 100.0
+script = ExtResource("32_y03uq")
+
+[node name="Energy_Orb_Spawn_Rate_Slider" type="HSlider" parent="Menu_User_Interface/Settings/Stage_Properties"]
+top_level = true
+layout_mode = 0
+offset_left = -934.0
+offset_top = 420.0
+offset_right = -734.0
+offset_bottom = 450.0
+scale = Vector2(3, 3)
+max_value = 0.1
+step = 0.001
+value = 0.001
+script = ExtResource("33_un881")
+
+[node name="Rotating_Platform_Enable_Disable" type="CheckBox" parent="Menu_User_Interface/Settings/Stage_Properties"]
+top_level = true
+layout_mode = 2
+offset_left = -341.0
+offset_top = -21.0
+offset_right = 23.0
+offset_bottom = 33.0
+scale = Vector2(4, 4)
+text = "(PLAYER CONTROL INCOMPATIBLE) 
+Rotating Stage"
+script = ExtResource("34_a0edu")
+
+[node name="PlayerPlatformControlEnableDisable" type="CheckBox" parent="Menu_User_Interface/Settings/Stage_Properties"]
+top_level = true
+layout_mode = 0
+offset_left = -312.0
+offset_top = -123.0
+offset_right = -102.0
+offset_bottom = -92.0
+scale = Vector2(4, 4)
+button_pressed = true
+text = "Player Platform Control"
+script = ExtResource("35_rlhm1")
+
+[node name="Platforms_Label" type="Label" parent="Menu_User_Interface/Settings/Stage_Properties"]
+layout_mode = 0
+offset_left = -906.0
+offset_top = 69.0
+offset_right = -723.0
+offset_bottom = 92.0
+scale = Vector2(3, 3)
+text = "Platforms Number"
+
+[node name="Ring_Radius_Label" type="Label" parent="Menu_User_Interface/Settings/Stage_Properties"]
+layout_mode = 0
+offset_left = -912.0
+offset_top = 226.0
+offset_right = -729.0
+offset_bottom = 249.0
+scale = Vector2(3, 3)
+text = "Stage Size"
+
+[node name="Camera_Height_Label" type="Label" parent="Menu_User_Interface/Settings/Stage_Properties"]
+layout_mode = 0
+offset_left = -898.0
+offset_top = -55.0
+offset_right = -715.0
+offset_bottom = -32.0
+scale = Vector2(3, 3)
+text = "Label Scale"
+
+[node name="Match_Timer_Label" type="Label" parent="Menu_User_Interface/Settings/Stage_Properties"]
+layout_mode = 0
+offset_left = 356.0
+offset_top = -537.0
+offset_right = 833.0
+offset_bottom = -514.0
+scale = Vector2(3, 3)
+text = "Match Timer 0 = no timer. up to 1 hour which is 3600 seconds."
+
+[node name="Platform_Destroy_Speed_Label" type="Label" parent="Menu_User_Interface/Settings/Stage_Properties"]
+layout_mode = 0
+offset_left = 269.0
+offset_top = 288.0
+offset_right = 493.0
+offset_bottom = 311.0
+scale = Vector2(3, 3)
+text = "Platform Destroy Speed"
+
+[node name="Platform_Destroy_Odds_Label" type="Label" parent="Menu_User_Interface/Settings/Stage_Properties"]
+layout_mode = 0
+offset_left = 264.0
+offset_top = 144.0
+offset_right = 488.0
+offset_bottom = 167.0
+scale = Vector2(3, 3)
+text = "Platform Destroy Odds"
+
+[node name="Energy_Orb_Spawn_Rate_Label" type="Label" parent="Menu_User_Interface/Settings/Stage_Properties"]
+layout_mode = 0
+offset_left = -941.0
+offset_top = 363.0
+offset_right = -717.0
+offset_bottom = 386.0
+scale = Vector2(3, 3)
+text = "Energy Orb Spawn Rate"
+
+[node name="Weather_Effects_Enable_Disable" type="CheckBox" parent="Menu_User_Interface/Settings/Stage_Properties"]
+top_level = true
+layout_mode = 0
+offset_left = -320.0
+offset_top = -236.0
+offset_right = -117.0
+offset_bottom = -205.0
+scale = Vector2(4, 4)
+text = "Weather"
+
+[node name="Random_Inverse_Controls" type="CheckBox" parent="Menu_User_Interface/Settings/Stage_Properties"]
+top_level = true
+layout_mode = 0
+offset_left = 1107.0
+offset_top = 631.0
+offset_right = 1331.0
+offset_bottom = 662.0
+scale = Vector2(4, 4)
+text = "Random Inverse Controls"
+
+[node name="Team_Properties" type="Control" parent="Menu_User_Interface/Settings"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Group_Rally_Enable_Disable" type="CheckBox" parent="Menu_User_Interface/Settings/Team_Properties"]
+top_level = true
+layout_mode = 0
+offset_left = -273.0
+offset_top = 571.0
+offset_right = -102.0
+offset_bottom = 602.0
+scale = Vector2(4, 4)
+text = "Group Rally Ability"
+
+[node name="Group_Momentum_Sync_Ability" type="CheckBox" parent="Menu_User_Interface/Settings/Team_Properties"]
+top_level = true
+layout_mode = 0
+offset_left = -271.0
+offset_top = 676.0
+offset_right = 2.0
+offset_bottom = 707.0
+scale = Vector2(4, 4)
+text = "Group_Momentum_Sync_Ability"
+
+[node name="Player_Abilities" type="Control" parent="Menu_User_Interface/Settings"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Rally_Enable_Disable" type="CheckBox" parent="Menu_User_Interface/Settings/Player_Abilities"]
+top_level = true
+layout_mode = 2
+offset_left = 1106.0
+offset_top = 395.0
+offset_right = 1225.0
+offset_bottom = 426.0
+scale = Vector2(4, 4)
+text = "Rally Ability"
+
+[node name="Stealth_Enable_Disable" type="CheckBox" parent="Menu_User_Interface/Settings/Player_Abilities"]
+top_level = true
+layout_mode = 0
+offset_left = -322.0
+offset_top = 382.0
+offset_right = -22.0
+offset_bottom = 413.0
+scale = Vector2(4, 4)
+button_pressed = true
+text = "Stealth"
+script = ExtResource("36_73r3h")
+
+[node name="Fly_Enable_Disable" type="CheckBox" parent="Menu_User_Interface/Settings/Player_Abilities"]
+top_level = true
+layout_mode = 0
+offset_left = -272.0
+offset_top = 819.0
+offset_right = 116.0
+offset_bottom = 850.0
+scale = Vector2(4, 4)
+text = "Fly Ability (reverses player gravity temporarily)"
+
+[node name="Scatter_Ability_Enable_Disable" type="CheckBox" parent="Menu_User_Interface/Settings/Player_Abilities"]
+top_level = true
+layout_mode = 0
+offset_left = 1071.0
+offset_top = 519.0
+offset_right = 1252.0
+offset_bottom = 550.0
+scale = Vector2(4, 4)
+text = "Scatter Ability"
+
+[node name="Double_Jump_Enable_Disable" type="CheckBox" parent="Menu_User_Interface/Settings/Player_Abilities"]
+top_level = true
+layout_mode = 0
+offset_left = -317.0
+offset_top = -339.0
+offset_right = -136.0
+offset_bottom = -308.0
+scale = Vector2(4, 4)
+text = "Double Jump Ability"
+
+[node name="Ram_Enable_Disable" type="CheckBox" parent="Menu_User_Interface/Settings/Player_Abilities"]
+top_level = true
+layout_mode = 0
+offset_left = -317.0
+offset_top = -409.0
+offset_right = -136.0
+offset_bottom = -378.0
+scale = Vector2(4, 4)
+text = "Ram Ability"
+
+[node name="Game_Mode" type="Control" parent="Menu_User_Interface/Settings"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Elimination_Roulette" type="Label" parent="Menu_User_Interface/Settings/Game_Mode"]
+layout_mode = 0
+offset_left = -947.0
+offset_top = 600.0
+offset_right = -789.0
+offset_bottom = 623.0
+scale = Vector2(3, 3)
+text = "Elimination Roulette"
+
+[node name="Chase_Mode" type="Label" parent="Menu_User_Interface/Settings/Game_Mode"]
+layout_mode = 0
+offset_left = -936.0
+offset_top = 733.0
+offset_right = -778.0
+offset_bottom = 756.0
+scale = Vector2(3, 3)
+text = "Chase Mode"
+
+[node name="Custom_Skin_Selection_Screen" type="Control" parent="Menu_User_Interface"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Red_Skin_Select_Button" type="Button" parent="Menu_User_Interface/Custom_Skin_Selection_Screen"]
+layout_mode = 0
+offset_left = -869.0
+offset_top = -420.0
+offset_right = -613.0
+offset_bottom = -164.0
+theme_override_styles/hover = ExtResource("33_xg13g")
+theme_override_styles/normal = ExtResource("34_ckn5m")
+icon = ExtResource("33_5vnjh")
+
+[node name="Green_Skin_Select_Button" type="Button" parent="Menu_User_Interface/Custom_Skin_Selection_Screen"]
+layout_mode = 0
+offset_left = -569.0
+offset_top = -420.0
+offset_right = -313.0
+offset_bottom = -164.0
+theme_override_styles/hover = ExtResource("33_xg13g")
+theme_override_styles/normal = ExtResource("34_ckn5m")
+icon = ExtResource("34_mkuv2")
+
+[node name="Yellow_Skin_Select_Button" type="Button" parent="Menu_User_Interface/Custom_Skin_Selection_Screen"]
+layout_mode = 0
+offset_left = -269.0
+offset_top = -420.0
+offset_right = -13.0
+offset_bottom = -164.0
+theme_override_styles/hover = ExtResource("33_xg13g")
+theme_override_styles/normal = ExtResource("34_ckn5m")
+icon = ExtResource("35_aqinu")
+
+[node name="Dark_Blue_Skin_Select_Button" type="Button" parent="Menu_User_Interface/Custom_Skin_Selection_Screen"]
+layout_mode = 0
+offset_left = 31.0
+offset_top = -420.0
+offset_right = 287.0
+offset_bottom = -164.0
+theme_override_styles/hover = ExtResource("33_xg13g")
+theme_override_styles/normal = ExtResource("34_ckn5m")
+icon = ExtResource("36_xg13g")
+
+[node name="Orange_Skin_Select_Button" type="Button" parent="Menu_User_Interface/Custom_Skin_Selection_Screen"]
+layout_mode = 0
+offset_left = 331.0
+offset_top = -420.0
+offset_right = 587.0
+offset_bottom = -164.0
+theme_override_styles/hover = ExtResource("33_xg13g")
+theme_override_styles/normal = ExtResource("34_ckn5m")
+icon = ExtResource("37_ckn5m")
+
+[node name="Purple_Skin_Select_Button" type="Button" parent="Menu_User_Interface/Custom_Skin_Selection_Screen"]
+layout_mode = 0
+offset_left = 631.0
+offset_top = -420.0
+offset_right = 887.0
+offset_bottom = -164.0
+theme_override_styles/hover = ExtResource("33_xg13g")
+theme_override_styles/normal = ExtResource("34_ckn5m")
+icon = ExtResource("38_w4vqn")
+
+[node name="White_Skin_Select_Button" type="Button" parent="Menu_User_Interface/Custom_Skin_Selection_Screen"]
+layout_mode = 0
+offset_left = -869.0
+offset_top = -73.0
+offset_right = -613.0
+offset_bottom = 183.0
+theme_override_styles/hover = ExtResource("33_xg13g")
+theme_override_styles/normal = ExtResource("34_ckn5m")
+icon = ExtResource("39_886uv")
+
+[node name="Black_Skin_Select_Button" type="Button" parent="Menu_User_Interface/Custom_Skin_Selection_Screen"]
+layout_mode = 0
+offset_left = -269.0
+offset_top = -73.0
+offset_right = -13.0
+offset_bottom = 183.0
+theme_override_styles/hover = ExtResource("33_xg13g")
+theme_override_styles/normal = ExtResource("34_ckn5m")
+icon = ExtResource("40_gqv7f")
+
+[node name="Light_Pink_Skin_Select_Button" type="Button" parent="Menu_User_Interface/Custom_Skin_Selection_Screen"]
+layout_mode = 0
+offset_left = -569.0
+offset_top = -73.0
+offset_right = -313.0
+offset_bottom = 183.0
+theme_override_styles/hover = ExtResource("33_xg13g")
+theme_override_styles/normal = ExtResource("34_ckn5m")
+icon = ExtResource("41_1n5j2")
+
+[node name="Cyan_Skin_Select_Button" type="Button" parent="Menu_User_Interface/Custom_Skin_Selection_Screen"]
+layout_mode = 0
+offset_left = 31.0
+offset_top = -73.0
+offset_right = 287.0
+offset_bottom = 183.0
+theme_override_styles/hover = ExtResource("33_xg13g")
+theme_override_styles/normal = ExtResource("34_ckn5m")
+icon = ExtResource("42_i217f")
+
+[node name="Guide" type="Control" parent="Menu_User_Interface"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Player Connect Guide Button" type="Button" parent="Menu_User_Interface/Guide"]
+layout_mode = 0
+offset_left = -947.0
+offset_top = -508.0
+offset_right = -773.0
+offset_bottom = -477.0
+scale = Vector2(3, 3)
+theme_override_styles/hover = ExtResource("36_0wnni")
+theme_override_styles/normal = ExtResource("37_tu34c")
+text = "Player Connect Guide"
+
+[node name="Player Control Guide Button" type="Button" parent="Menu_User_Interface/Guide"]
+layout_mode = 0
+offset_left = -947.0
+offset_top = -402.0
+offset_right = -773.0
+offset_bottom = -371.0
+scale = Vector2(3, 3)
+theme_override_styles/hover = ExtResource("36_0wnni")
+theme_override_styles/normal = ExtResource("37_tu34c")
+text = "Player Control Guide"
+
+[node name="Go Main Screen" type="Button" parent="Menu_User_Interface/Guide"]
+layout_mode = 0
+offset_left = -420.0
+offset_top = -508.0
+offset_right = -291.0
+offset_bottom = -477.0
+scale = Vector2(3, 3)
+theme_override_styles/hover = ExtResource("36_0wnni")
+theme_override_styles/normal = ExtResource("37_tu34c")
+text = "Go Main Screen"
+
+[node name="Player Connect Guide" type="Control" parent="Menu_User_Interface"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Player_Connect_Guide_Text" type="Label" parent="Menu_User_Interface/Player Connect Guide"]
+layout_mode = 0
+offset_left = -924.0
+offset_top = -497.0
+offset_right = -884.0
+offset_bottom = -457.0
+
+[node name="Player_Connect_Guide_Text_Part_2" type="Label" parent="Menu_User_Interface/Player Connect Guide"]
+layout_mode = 0
+offset_left = -156.0
+offset_top = -370.0
+offset_right = -116.0
+offset_bottom = -347.0
+horizontal_alignment = 2
+
+[node name="Go Main Screen" type="Button" parent="Menu_User_Interface/Player Connect Guide"]
+layout_mode = 0
+offset_left = -175.0
+offset_top = -1.0
+offset_right = -46.0
+offset_bottom = 30.0
+scale = Vector2(3, 3)
+theme_override_styles/hover = ExtResource("36_0wnni")
+theme_override_styles/normal = ExtResource("37_tu34c")
+text = "Go Main Screen"
+
+[node name="Player Controls Guide" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Player_Controls_Guide_Text" type="Label" parent="Player Controls Guide"]
+layout_mode = 0
+offset_left = -877.0
+offset_top = -493.0
+offset_right = -837.0
+offset_bottom = -470.0
+
+[node name="Go Main Screen" type="Button" parent="Player Controls Guide"]
+layout_mode = 0
+offset_left = -420.0
+offset_top = -508.0
+offset_right = -291.0
+offset_bottom = -477.0
+scale = Vector2(3, 3)
+theme_override_styles/hover = ExtResource("36_0wnni")
+theme_override_styles/normal = ExtResource("37_tu34c")
+text = "Go Main Screen"
+
+[node name="During Game Interface" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="player_1_platform_display_label" type="Label" parent="During Game Interface"]
+visible = false
+layout_mode = 0
+offset_left = 400.0
+offset_top = -525.0
+offset_right = 440.0
+offset_bottom = -502.0
+
+[node name="player_2_platform_display_label" type="Label" parent="During Game Interface"]
+visible = false
+layout_mode = 0
+offset_left = 400.0
+offset_top = -475.0
+offset_right = 440.0
+offset_bottom = -452.0
+
+[node name="player_3_platform_display_label" type="Label" parent="During Game Interface"]
+visible = false
+layout_mode = 0
+offset_left = 400.0
+offset_top = -425.0
+offset_right = 440.0
+offset_bottom = -402.0
+
+[node name="player_4_platform_display_label" type="Label" parent="During Game Interface"]
+visible = false
+layout_mode = 0
+offset_left = 400.0
+offset_top = -375.0
+offset_right = 440.0
+offset_bottom = -352.0
+
+[node name="player_5_platform_display_label" type="Label" parent="During Game Interface"]
+visible = false
+layout_mode = 0
+offset_left = 400.0
+offset_top = -325.0
+offset_right = 440.0
+offset_bottom = -302.0
+
+[node name="player_6_platform_display_label" type="Label" parent="During Game Interface"]
+visible = false
+layout_mode = 0
+offset_left = 400.0
+offset_top = -275.0
+offset_right = 440.0
+offset_bottom = -252.0
+
+[node name="player_7_platform_display_label" type="Label" parent="During Game Interface"]
+visible = false
+layout_mode = 0
+offset_left = 400.0
+offset_top = -225.0
+offset_right = 440.0
+offset_bottom = -202.0
+
+[node name="player_8_platform_display_label" type="Label" parent="During Game Interface"]
+visible = false
+layout_mode = 0
+offset_left = 400.0
+offset_top = -175.0
+offset_right = 440.0
+offset_bottom = -152.0
+
+[node name="player_9_platform_display_label" type="Label" parent="During Game Interface"]
+visible = false
+layout_mode = 0
+offset_left = 400.0
+offset_top = -125.0
+offset_right = 440.0
+offset_bottom = -102.0
+
+[node name="player_10_platform_display_label" type="Label" parent="During Game Interface"]
+visible = false
+layout_mode = 0
+offset_left = 400.0
+offset_top = -75.0
+offset_right = 440.0
+offset_bottom = -52.0
+
+[node name="Show_Skin_During_Game" type="Control" parent="During Game Interface"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Player_1_Select_Skin_Button" type="Button" parent="During Game Interface/Show_Skin_During_Game"]
+layout_mode = 0
+offset_left = 608.0
+offset_top = -522.0
+offset_right = 672.0
+offset_bottom = -458.0
+scale = Vector2(0.5, 0.5)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wxt5k")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_73r3h")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ptdgm")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_0wnni")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_tu34c")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_cg5lj")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_gnxdr")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dy8hv")
+theme_override_styles/normal = SubResource("StyleBoxFlat_gehln")
+icon = ExtResource("16_rajss")
+icon_alignment = 1
+
+[node name="Player_2_Select_Skin_Button" type="Button" parent="During Game Interface/Show_Skin_During_Game"]
+layout_mode = 0
+offset_left = 608.0
+offset_top = -442.0
+offset_right = 672.0
+offset_bottom = -378.0
+scale = Vector2(0.5, 0.5)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wxt5k")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_73r3h")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ptdgm")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_0wnni")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_tu34c")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_cg5lj")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_gnxdr")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dy8hv")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6mgqm")
+icon = ExtResource("17_d15id")
+icon_alignment = 1
+
+[node name="Player_3_Select_Skin_Button" type="Button" parent="During Game Interface/Show_Skin_During_Game"]
+layout_mode = 0
+offset_left = 608.0
+offset_top = -362.0
+offset_right = 672.0
+offset_bottom = -298.0
+scale = Vector2(0.5, 0.5)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wxt5k")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_73r3h")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ptdgm")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_0wnni")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_tu34c")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_cg5lj")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_gnxdr")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dy8hv")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ri0a6")
+icon = ExtResource("18_vjohd")
+icon_alignment = 1
+
+[node name="Player_4_Select_Skin_Button" type="Button" parent="During Game Interface/Show_Skin_During_Game"]
+layout_mode = 0
+offset_left = 608.0
+offset_top = -282.0
+offset_right = 672.0
+offset_bottom = -218.0
+scale = Vector2(0.5, 0.5)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wxt5k")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_73r3h")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ptdgm")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_0wnni")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_tu34c")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_cg5lj")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_gnxdr")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dy8hv")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ri0a6")
+icon = ExtResource("19_507oj")
+icon_alignment = 1
+
+[node name="Player_5_Select_Skin_Button" type="Button" parent="During Game Interface/Show_Skin_During_Game"]
+layout_mode = 0
+offset_left = 608.0
+offset_top = -202.0
+offset_right = 672.0
+offset_bottom = -138.0
+scale = Vector2(0.5, 0.5)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wxt5k")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_73r3h")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ptdgm")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_0wnni")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_tu34c")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_cg5lj")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_gnxdr")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dy8hv")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ri0a6")
+icon = ExtResource("20_mkuv2")
+icon_alignment = 1
+
+[node name="Player_6_Select_Skin_Button" type="Button" parent="During Game Interface/Show_Skin_During_Game"]
+layout_mode = 0
+offset_left = 608.0
+offset_top = -122.0
+offset_right = 672.0
+offset_bottom = -58.0
+scale = Vector2(0.5, 0.5)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wxt5k")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_73r3h")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ptdgm")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_0wnni")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_tu34c")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_cg5lj")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_gnxdr")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dy8hv")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ri0a6")
+icon = ExtResource("21_aqinu")
+icon_alignment = 1
+
+[node name="Player_7_Select_Skin_Button" type="Button" parent="During Game Interface/Show_Skin_During_Game"]
+layout_mode = 0
+offset_left = 608.0
+offset_top = -42.0
+offset_right = 672.0
+offset_bottom = 22.0
+scale = Vector2(0.5, 0.5)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wxt5k")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_73r3h")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ptdgm")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_0wnni")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_tu34c")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_cg5lj")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_gnxdr")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dy8hv")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ri0a6")
+icon = ExtResource("22_xg13g")
+icon_alignment = 1
+
+[node name="Player_8_Select_Skin_Button" type="Button" parent="During Game Interface/Show_Skin_During_Game"]
+layout_mode = 0
+offset_left = 608.0
+offset_top = 38.0
+offset_right = 672.0
+offset_bottom = 102.0
+scale = Vector2(0.5, 0.5)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wxt5k")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_73r3h")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ptdgm")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_0wnni")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_tu34c")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_cg5lj")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_gnxdr")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dy8hv")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ri0a6")
+icon = ExtResource("23_ckn5m")
+icon_alignment = 1
+
+[node name="Player_9_Select_Skin_Button" type="Button" parent="During Game Interface/Show_Skin_During_Game"]
+layout_mode = 0
+offset_left = 608.0
+offset_top = 118.0
+offset_right = 672.0
+offset_bottom = 182.0
+scale = Vector2(0.5, 0.5)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wxt5k")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_73r3h")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ptdgm")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_0wnni")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_tu34c")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_cg5lj")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_gnxdr")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dy8hv")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ri0a6")
+icon = ExtResource("24_w4vqn")
+icon_alignment = 1
+
+[node name="Player_10_Select_Skin_Button" type="Button" parent="During Game Interface/Show_Skin_During_Game"]
+layout_mode = 0
+offset_left = 608.0
+offset_top = 198.0
+offset_right = 672.0
+offset_bottom = 262.0
+scale = Vector2(0.5, 0.5)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wxt5k")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_73r3h")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ptdgm")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_0wnni")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_tu34c")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_cg5lj")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_gnxdr")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dy8hv")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ri0a6")
+icon = ExtResource("25_886uv")
+icon_alignment = 1
+
+[node name="Show_Player_Energy_During_Game" type="Control" parent="During Game Interface"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Post-Match Interface" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Rematch" type="Button" parent="Post-Match Interface"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = -512.0
+offset_right = 115.0
+offset_bottom = -481.0
+scale = Vector2(3, 3)
+theme_override_styles/hover = ExtResource("36_0wnni")
+theme_override_styles/normal = ExtResource("37_tu34c")
+text = "Rematch"
+
+[node name="Main Menu" type="Button" parent="Post-Match Interface"]
+layout_mode = 0
+offset_left = -273.0
+offset_top = -512.0
+offset_right = -177.0
+offset_bottom = -481.0
+scale = Vector2(3, 3)
+theme_override_styles/hover = ExtResource("36_0wnni")
+theme_override_styles/normal = ExtResource("37_tu34c")
+text = "Main Menu"
+
+[node name="Victor_Label" type="Label" parent="Post-Match Interface"]
+layout_mode = 0
+offset_left = -80.0
+offset_top = -382.0
+offset_right = -40.0
+offset_bottom = -359.0
+scale = Vector2(2, 2)
+
+[node name="Start_Menu_Screen_Camera" type="Camera2D" parent="."]
+script = ExtResource("11_5vnjh")
+
+[node name="TopDownCamera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 0, 0, 0)
+fov = 60.0
+script = ExtResource("1_6mgqm")
+padding_factor = null
+min_size = null
+max_size = null
+smooth_speed = null
+
+[node name="LIGHT" type="Node3D" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="LIGHT"]
+environment = SubResource("Environment_8x57o")
+
+[node name="Viewports" type="Node" parent="."]
+
+[node name="P1_Material_Menu_Display_Viewport" type="SubViewport" parent="Viewports"]
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(64, 64)
+
+[node name="1Material_Texture_Display_For_Viewport" type="MeshInstance3D" parent="Viewports/P1_Material_Menu_Display_Viewport"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 50002.3, 0, 0)
+mesh = SubResource("SphereMesh_6mgqm")
+
+[node name="Material_Display_Camera" type="Camera3D" parent="Viewports/P1_Material_Menu_Display_Viewport"]
+transform = Transform3D(-4.37114e-08, -8.74228e-08, 1, 0, -1, -8.74228e-08, 1, -3.82137e-15, 4.37114e-08, 50003, 0, 0)
+
+[node name="P2_Material_Menu_Display_Viewport" type="SubViewport" parent="Viewports"]
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(64, 64)
+
+[node name="2Material_Texture_Display_For_Viewport" type="MeshInstance3D" parent="Viewports/P2_Material_Menu_Display_Viewport"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 50002.3, 4, 0)
+mesh = SubResource("SphereMesh_gehln")
+
+[node name="Material_Display_Camera" type="Camera3D" parent="Viewports/P2_Material_Menu_Display_Viewport"]
+transform = Transform3D(-4.37114e-08, -8.74228e-08, 1, 0, -1, -8.74228e-08, 1, -3.82137e-15, 4.37114e-08, 50003, 4, 0)
+
+[node name="P3_Material_Menu_Display_Viewport" type="SubViewport" parent="Viewports"]
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(64, 64)
+
+[node name="3Material_Texture_Display_For_Viewport" type="MeshInstance3D" parent="Viewports/P3_Material_Menu_Display_Viewport"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 50002.3, 8, 0)
+mesh = SubResource("SphereMesh_ri0a6")
+
+[node name="Material_Display_Camera" type="Camera3D" parent="Viewports/P3_Material_Menu_Display_Viewport"]
+transform = Transform3D(-4.37114e-08, -8.74228e-08, 1, 0, -1, -8.74228e-08, 1, -3.82137e-15, 4.37114e-08, 50003, 8, 0)
+
+[node name="P4_Material_Menu_Display_Viewport" type="SubViewport" parent="Viewports"]
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(64, 64)
+
+[node name="4Material_Texture_Display_For_Viewport" type="MeshInstance3D" parent="Viewports/P4_Material_Menu_Display_Viewport"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 50002.3, 12, 0)
+mesh = SubResource("SphereMesh_ujpmc")
+
+[node name="Material_Display_Camera" type="Camera3D" parent="Viewports/P4_Material_Menu_Display_Viewport"]
+transform = Transform3D(-4.37114e-08, -8.74228e-08, 1, 0, -1, -8.74228e-08, 1, -3.82137e-15, 4.37114e-08, 50003, 12, 0)
+
+[node name="P5_Material_Menu_Display_Viewport" type="SubViewport" parent="Viewports"]
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(64, 64)
+
+[node name="5Material_Texture_Display_For_Viewport" type="MeshInstance3D" parent="Viewports/P5_Material_Menu_Display_Viewport"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 50002.3, 16, 0)
+mesh = SubResource("SphereMesh_0th31")
+
+[node name="Material_Display_Camera" type="Camera3D" parent="Viewports/P5_Material_Menu_Display_Viewport"]
+transform = Transform3D(-4.37114e-08, -8.74228e-08, 1, 0, -1, -8.74228e-08, 1, -3.82137e-15, 4.37114e-08, 50003, 16, 0)
+
+[node name="P6_Material_Menu_Display_Viewport" type="SubViewport" parent="Viewports"]
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(64, 64)
+
+[node name="6Material_Texture_Display_For_Viewport" type="MeshInstance3D" parent="Viewports/P6_Material_Menu_Display_Viewport"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 50002.3, 20, 0)
+mesh = SubResource("SphereMesh_7o6ra")
+
+[node name="Material_Display_Camera" type="Camera3D" parent="Viewports/P6_Material_Menu_Display_Viewport"]
+transform = Transform3D(-4.37114e-08, -8.74228e-08, 1, 0, -1, -8.74228e-08, 1, -3.82137e-15, 4.37114e-08, 50003, 20, 0)
+
+[node name="P7_Material_Menu_Display_Viewport" type="SubViewport" parent="Viewports"]
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(64, 64)
+
+[node name="7Material_Texture_Display_For_Viewport" type="MeshInstance3D" parent="Viewports/P7_Material_Menu_Display_Viewport"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 50002.3, 24, 0)
+mesh = SubResource("SphereMesh_rlv6g")
+
+[node name="Material_Display_Camera" type="Camera3D" parent="Viewports/P7_Material_Menu_Display_Viewport"]
+transform = Transform3D(-4.37114e-08, -8.74228e-08, 1, 0, -1, -8.74228e-08, 1, -3.82137e-15, 4.37114e-08, 50003, 24, 0)
+
+[node name="P8_Material_Menu_Display_Viewport" type="SubViewport" parent="Viewports"]
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(64, 64)
+
+[node name="8Material_Texture_Display_For_Viewport" type="MeshInstance3D" parent="Viewports/P8_Material_Menu_Display_Viewport"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 50002.3, 28, 0)
+mesh = SubResource("SphereMesh_exl6l")
+
+[node name="Material_Display_Camera" type="Camera3D" parent="Viewports/P8_Material_Menu_Display_Viewport"]
+transform = Transform3D(-4.37114e-08, -8.74228e-08, 1, 0, -1, -8.74228e-08, 1, -3.82137e-15, 4.37114e-08, 50003, 28, 0)
+
+[node name="P9_Material_Menu_Display_Viewport" type="SubViewport" parent="Viewports"]
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(64, 64)
+
+[node name="9Material_Texture_Display_For_Viewport" type="MeshInstance3D" parent="Viewports/P9_Material_Menu_Display_Viewport"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 50002.3, 32, 0)
+mesh = SubResource("SphereMesh_5hvpv")
+
+[node name="Material_Display_Camera" type="Camera3D" parent="Viewports/P9_Material_Menu_Display_Viewport"]
+transform = Transform3D(-4.37114e-08, -8.74228e-08, 1, 0, -1, -8.74228e-08, 1, -3.82137e-15, 4.37114e-08, 50003, 32, 0)
+
+[node name="P10_Material_Menu_Display_Viewport" type="SubViewport" parent="Viewports"]
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(64, 64)
+
+[node name="10Material_Texture_Display_For_Viewport" type="MeshInstance3D" parent="Viewports/P10_Material_Menu_Display_Viewport"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 50002.3, 36, 0)
+mesh = SubResource("SphereMesh_ei47v")
+
+[node name="Material_Display_Camera" type="Camera3D" parent="Viewports/P10_Material_Menu_Display_Viewport"]
+transform = Transform3D(-4.37114e-08, -8.74228e-08, 1, 0, -1, -8.74228e-08, 1, -3.82137e-15, 4.37114e-08, 50003, 36, 0)
+
+[node name="Material_Skin_Options_Display_Viewport" type="Node" parent="."]
+
+[node name="Red_Material_Option_Viewport" type="SubViewport" parent="Material_Skin_Options_Display_Viewport"]
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(256, 256)
+
+[node name="Red_Material_Option_Mesh_Display" type="MeshInstance3D" parent="Material_Skin_Options_Display_Viewport/Red_Material_Option_Viewport"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 50000, 0, 400)
+mesh = SubResource("SphereMesh_mkuv2")
+skeleton = NodePath("../..")
+
+[node name="Material_Option_Display_Camera" type="Camera3D" parent="Material_Skin_Options_Display_Viewport/Red_Material_Option_Viewport"]
+transform = Transform3D(4.37114e-08, -3.82137e-15, 1, -8.74228e-08, -1, 2.5411e-21, 1, -8.74228e-08, -4.37114e-08, 50167.6, 0, 400)
+
+[node name="Green_Material_Option_Viewport" type="SubViewport" parent="Material_Skin_Options_Display_Viewport"]
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(256, 256)
+
+[node name="Material_Option_Display_Camera" type="Camera3D" parent="Material_Skin_Options_Display_Viewport/Green_Material_Option_Viewport"]
+transform = Transform3D(4.37114e-08, -3.82137e-15, 1, -8.74228e-08, -1, 2.5411e-21, 1, -8.74228e-08, -4.37114e-08, 50167.6, 400, 400)
+
+[node name="Green_Material_Option_Mesh_Display" type="MeshInstance3D" parent="Material_Skin_Options_Display_Viewport/Green_Material_Option_Viewport"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 50000, 400, 400)
+mesh = SubResource("SphereMesh_aqinu")
+
+[node name="Yellow_Material_Option_Viewport" type="SubViewport" parent="Material_Skin_Options_Display_Viewport"]
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(256, 256)
+
+[node name="Yellow_Material_Option_Mesh_Display" type="MeshInstance3D" parent="Material_Skin_Options_Display_Viewport/Yellow_Material_Option_Viewport"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 50000, 800, 400)
+mesh = SubResource("SphereMesh_xg13g")
+skeleton = NodePath("../..")
+
+[node name="Material_Option_Display_Camera" type="Camera3D" parent="Material_Skin_Options_Display_Viewport/Yellow_Material_Option_Viewport"]
+transform = Transform3D(4.37114e-08, -3.82137e-15, 1, -8.74228e-08, -1, 0, 1, -8.74228e-08, -4.37114e-08, 50167.6, 800, 400)
+
+[node name="Dark_Blue_Material_Option_Viewport" type="SubViewport" parent="Material_Skin_Options_Display_Viewport"]
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(256, 256)
+
+[node name="Dark_Blue_Material_Option_Mesh_Display" type="MeshInstance3D" parent="Material_Skin_Options_Display_Viewport/Dark_Blue_Material_Option_Viewport"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 50000, 1200, 400)
+mesh = SubResource("SphereMesh_ckn5m")
+skeleton = NodePath("../..")
+
+[node name="Material_Option_Display_Camera" type="Camera3D" parent="Material_Skin_Options_Display_Viewport/Dark_Blue_Material_Option_Viewport"]
+transform = Transform3D(4.37114e-08, -3.82137e-15, 1, -8.74228e-08, -1, 0, 1, -8.74228e-08, -4.37114e-08, 50167.6, 1200, 400)
+
+[node name="Orange_Material_Option_Viewport" type="SubViewport" parent="Material_Skin_Options_Display_Viewport"]
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(256, 256)
+
+[node name="Orange_Material_Option_Mesh_Display" type="MeshInstance3D" parent="Material_Skin_Options_Display_Viewport/Orange_Material_Option_Viewport"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 50000, 1600, 400)
+mesh = SubResource("SphereMesh_w4vqn")
+skeleton = NodePath("../..")
+
+[node name="Material_Option_Display_Camera" type="Camera3D" parent="Material_Skin_Options_Display_Viewport/Orange_Material_Option_Viewport"]
+transform = Transform3D(4.37114e-08, -3.82137e-15, 1, -8.74228e-08, -1, 0, 1, -8.74228e-08, -4.37114e-08, 50167.6, 1600, 400)
+
+[node name="Purple_Material_Option_Viewport" type="SubViewport" parent="Material_Skin_Options_Display_Viewport"]
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(256, 256)
+
+[node name="Purple_Material_Option_Mesh_Display" type="MeshInstance3D" parent="Material_Skin_Options_Display_Viewport/Purple_Material_Option_Viewport"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 50000, 2000, 400)
+mesh = SubResource("SphereMesh_886uv")
+skeleton = NodePath("../..")
+
+[node name="Material_Option_Display_Camera" type="Camera3D" parent="Material_Skin_Options_Display_Viewport/Purple_Material_Option_Viewport"]
+transform = Transform3D(4.37114e-08, -3.82137e-15, 1, -8.74228e-08, -1, 0, 1, -8.74228e-08, -4.37114e-08, 50167.6, 2000, 400)
+
+[node name="White_Material_Option_Viewport" type="SubViewport" parent="Material_Skin_Options_Display_Viewport"]
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(256, 256)
+
+[node name="White_Material_Option_Mesh_Display" type="MeshInstance3D" parent="Material_Skin_Options_Display_Viewport/White_Material_Option_Viewport"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 50000, 2400, 400)
+mesh = SubResource("SphereMesh_gqv7f")
+skeleton = NodePath("../..")
+
+[node name="Material_Option_Display_Camera" type="Camera3D" parent="Material_Skin_Options_Display_Viewport/White_Material_Option_Viewport"]
+transform = Transform3D(4.37114e-08, -3.82137e-15, 1, -8.74228e-08, -1, 0, 1, -8.74228e-08, -4.37114e-08, 50167.6, 2400, 400)
+
+[node name="Cyan_Material_Option_Viewport" type="SubViewport" parent="Material_Skin_Options_Display_Viewport"]
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(256, 256)
+
+[node name="Cyan_Material_Option_Mesh_Display" type="MeshInstance3D" parent="Material_Skin_Options_Display_Viewport/Cyan_Material_Option_Viewport"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 50000, 2800, 400)
+mesh = SubResource("SphereMesh_1n5j2")
+skeleton = NodePath("../..")
+
+[node name="Material_Option_Display_Camera" type="Camera3D" parent="Material_Skin_Options_Display_Viewport/Cyan_Material_Option_Viewport"]
+transform = Transform3D(4.37114e-08, -3.82137e-15, 1, -8.74228e-08, -1, 0, 1, -8.74228e-08, -4.37114e-08, 50167.6, 2800, 400)
+
+[node name="Black_Material_Option_Viewport" type="SubViewport" parent="Material_Skin_Options_Display_Viewport"]
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(256, 256)
+
+[node name="Black_Material_Option_Mesh_Display" type="MeshInstance3D" parent="Material_Skin_Options_Display_Viewport/Black_Material_Option_Viewport"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 50000, 3200, 400)
+mesh = SubResource("SphereMesh_i217f")
+skeleton = NodePath("../..")
+
+[node name="Material_Option_Display_Camera" type="Camera3D" parent="Material_Skin_Options_Display_Viewport/Black_Material_Option_Viewport"]
+transform = Transform3D(4.37114e-08, -3.82137e-15, 1, -8.74228e-08, -1, 0, 1, -8.74228e-08, -4.37114e-08, 50167.6, 3200, 400)
+
+[node name="Light_Pink_Material_Option_Viewport" type="SubViewport" parent="Material_Skin_Options_Display_Viewport"]
+transparent_bg = true
+msaa_3d = 3
+size = Vector2i(256, 256)
+
+[node name="Light_Pink_Material_Option_Mesh_Display" type="MeshInstance3D" parent="Material_Skin_Options_Display_Viewport/Light_Pink_Material_Option_Viewport"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 50000, 3600, 400)
+mesh = SubResource("SphereMesh_2811s")
+skeleton = NodePath("../..")
+
+[node name="Material_Option_Display_Camera" type="Camera3D" parent="Material_Skin_Options_Display_Viewport/Light_Pink_Material_Option_Viewport"]
+transform = Transform3D(4.37114e-08, -3.82137e-15, 1, -8.74228e-08, -1, 0, 1, -8.74228e-08, -4.37114e-08, 50167.6, 3600, 400)
+
+[node name="Effects" type="Node" parent="."]
+
+[connection signal="pressed" from="Menu_User_Interface/Game_Base_Screen/Settings_Button" to="Start_Menu_Screen_Camera" method="_go_primary_settings_screen"]
+[connection signal="pressed" from="Menu_User_Interface/Game_Base_Screen/Start_Game_Button" to="Start_Menu_Screen_Camera" method="_start_game_from_main_menu"]
+[connection signal="pressed" from="Menu_User_Interface/Game_Base_Screen/Connect_Guide_Button" to="Start_Menu_Screen_Camera" method="_go_guide_screen"]
+[connection signal="text_changed" from="Menu_User_Interface/Game_Base_Screen/Player_1_Name_Editor" to="Menu_User_Interface/Game_Base_Screen/Player_1_Name_Editor" method="_on_Player_Name_Editor_text_changed"]
+[connection signal="text_changed" from="Menu_User_Interface/Game_Base_Screen/Player_2_Name_Editor" to="Menu_User_Interface/Game_Base_Screen/Player_2_Name_Editor" method="_on_Player_Name_Editor_text_changed"]
+[connection signal="text_changed" from="Menu_User_Interface/Game_Base_Screen/Player_3_Name_Editor" to="Menu_User_Interface/Game_Base_Screen/Player_3_Name_Editor" method="_on_Player_Name_Editor_text_changed"]
+[connection signal="text_changed" from="Menu_User_Interface/Game_Base_Screen/Player_4_Name_Editor" to="Menu_User_Interface/Game_Base_Screen/Player_4_Name_Editor" method="_on_Player_Name_Editor_text_changed"]
+[connection signal="text_changed" from="Menu_User_Interface/Game_Base_Screen/Player_5_Name_Editor" to="Menu_User_Interface/Game_Base_Screen/Player_5_Name_Editor" method="_on_Player_Name_Editor_text_changed"]
+[connection signal="text_changed" from="Menu_User_Interface/Game_Base_Screen/Player_6_Name_Editor" to="Menu_User_Interface/Game_Base_Screen/Player_6_Name_Editor" method="_on_Player_Name_Editor_text_changed"]
+[connection signal="text_changed" from="Menu_User_Interface/Game_Base_Screen/Player_7_Name_Editor" to="Menu_User_Interface/Game_Base_Screen/Player_7_Name_Editor" method="_on_Player_Name_Editor_text_changed"]
+[connection signal="text_changed" from="Menu_User_Interface/Game_Base_Screen/Player_8_Name_Editor" to="Menu_User_Interface/Game_Base_Screen/Player_8_Name_Editor" method="_on_Player_Name_Editor_text_changed"]
+[connection signal="text_changed" from="Menu_User_Interface/Game_Base_Screen/Player_9_Name_Editor" to="Menu_User_Interface/Game_Base_Screen/Player_9_Name_Editor" method="_on_Player_Name_Editor_text_changed"]
+[connection signal="text_changed" from="Menu_User_Interface/Game_Base_Screen/Player_10_Name_Editor" to="Menu_User_Interface/Game_Base_Screen/Player_10_Name_Editor" method="_on_Player_Name_Editor_text_changed"]
+[connection signal="pressed" from="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen/Player_1_Select_Skin_Button" to="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen" method="_enter_custom_skin_selection_1"]
+[connection signal="pressed" from="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen/Player_2_Select_Skin_Button" to="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen" method="_enter_custom_skin_selection_2"]
+[connection signal="pressed" from="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen/Player_3_Select_Skin_Button" to="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen" method="_enter_custom_skin_selection_3"]
+[connection signal="pressed" from="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen/Player_4_Select_Skin_Button" to="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen" method="_enter_custom_skin_selection_4"]
+[connection signal="pressed" from="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen/Player_5_Select_Skin_Button" to="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen" method="_enter_custom_skin_selection_5"]
+[connection signal="pressed" from="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen/Player_6_Select_Skin_Button" to="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen" method="_enter_custom_skin_selection_6"]
+[connection signal="pressed" from="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen/Player_7_Select_Skin_Button" to="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen" method="_enter_custom_skin_selection_7"]
+[connection signal="pressed" from="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen/Player_8_Select_Skin_Button" to="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen" method="_enter_custom_skin_selection_8"]
+[connection signal="pressed" from="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen/Player_9_Select_Skin_Button" to="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen" method="_enter_custom_skin_selection_9"]
+[connection signal="pressed" from="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen/Player_10_Select_Skin_Button" to="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen" method="_enter_custom_skin_selection_10"]
+[connection signal="pressed" from="Menu_User_Interface/Settings/Settings_Navigation/Go Main Screen" to="Start_Menu_Screen_Camera" method="_go_back_to_main_menu_from_settings"]
+[connection signal="pressed" from="Menu_User_Interface/Settings/Settings_Navigation/Start_Game_Button" to="Start_Menu_Screen_Camera" method="_start_game_from_main_menu"]
+[connection signal="changed" from="Menu_User_Interface/Settings/Ball_Properties/Player_Ball_Count_Slider" to="Menu_User_Interface/Settings/Ball_Properties/Player_Ball_Count_Slider" method="_on_value_changed"]
+[connection signal="value_changed" from="Menu_User_Interface/Settings/Ball_Properties/Player_Ball_Count_Slider" to="Menu_User_Interface/Settings/Ball_Properties/Player_Ball_Count_Slider" method="_on_value_changed"]
+[connection signal="changed" from="Menu_User_Interface/Settings/Ball_Properties/Ball_Bounce_Slider" to="Menu_User_Interface/Settings/Ball_Properties/Ball_Bounce_Slider" method="_on_value_changed"]
+[connection signal="value_changed" from="Menu_User_Interface/Settings/Ball_Properties/Ball_Bounce_Slider" to="Menu_User_Interface/Settings/Ball_Properties/Ball_Bounce_Slider" method="_on_value_changed"]
+[connection signal="value_changed" from="Menu_User_Interface/Settings/Ball_Properties/Player_Lives_Slider" to="Menu_User_Interface/Settings/Ball_Properties/Player_Lives_Slider" method="_on_value_changed"]
+[connection signal="changed" from="Menu_User_Interface/Settings/Stage_Properties/Ring_Radius_Size_Slider" to="Menu_User_Interface/Settings/Stage_Properties/Ring_Radius_Size_Slider" method="_on_value_changed"]
+[connection signal="value_changed" from="Menu_User_Interface/Settings/Stage_Properties/Ring_Radius_Size_Slider" to="Menu_User_Interface/Settings/Stage_Properties/Ring_Radius_Size_Slider" method="_on_value_changed"]
+[connection signal="changed" from="Menu_User_Interface/Settings/Stage_Properties/Segments_Slider" to="Menu_User_Interface/Settings/Stage_Properties/Segments_Slider" method="_on_value_changed"]
+[connection signal="value_changed" from="Menu_User_Interface/Settings/Stage_Properties/Segments_Slider" to="Menu_User_Interface/Settings/Stage_Properties/Segments_Slider" method="_on_value_changed"]
+[connection signal="changed" from="Menu_User_Interface/Settings/Stage_Properties/Camera_Height_Slider" to="Menu_User_Interface/Settings/Stage_Properties/Camera_Height_Slider" method="_on_value_changed"]
+[connection signal="value_changed" from="Menu_User_Interface/Settings/Stage_Properties/Camera_Height_Slider" to="Menu_User_Interface/Settings/Stage_Properties/Camera_Height_Slider" method="_on_value_changed"]
+[connection signal="changed" from="Menu_User_Interface/Settings/Stage_Properties/Platform_Destroy_Speed_Slider" to="Menu_User_Interface/Settings/Stage_Properties/Platform_Destroy_Speed_Slider" method="_on_value_changed"]
+[connection signal="value_changed" from="Menu_User_Interface/Settings/Stage_Properties/Platform_Destroy_Speed_Slider" to="Menu_User_Interface/Settings/Stage_Properties/Platform_Destroy_Speed_Slider" method="_on_value_changed"]
+[connection signal="changed" from="Menu_User_Interface/Settings/Stage_Properties/Platform_Destroy_Odds" to="Menu_User_Interface/Settings/Stage_Properties/Platform_Destroy_Odds" method="_on_value_changed"]
+[connection signal="value_changed" from="Menu_User_Interface/Settings/Stage_Properties/Platform_Destroy_Odds" to="Menu_User_Interface/Settings/Stage_Properties/Platform_Destroy_Odds" method="_on_value_changed"]
+[connection signal="changed" from="Menu_User_Interface/Settings/Stage_Properties/Energy_Orb_Spawn_Rate_Slider" to="Menu_User_Interface/Settings/Stage_Properties/Energy_Orb_Spawn_Rate_Slider" method="_on_value_changed"]
+[connection signal="value_changed" from="Menu_User_Interface/Settings/Stage_Properties/Energy_Orb_Spawn_Rate_Slider" to="Menu_User_Interface/Settings/Stage_Properties/Energy_Orb_Spawn_Rate_Slider" method="_on_value_changed"]
+[connection signal="toggled" from="Menu_User_Interface/Settings/Stage_Properties/Rotating_Platform_Enable_Disable" to="Menu_User_Interface/Settings/Stage_Properties/Rotating_Platform_Enable_Disable" method="rotating_enabled"]
+[connection signal="toggled" from="Menu_User_Interface/Settings/Stage_Properties/PlayerPlatformControlEnableDisable" to="Menu_User_Interface/Settings/Stage_Properties/PlayerPlatformControlEnableDisable" method="_on_toggled"]
+[connection signal="toggled" from="Menu_User_Interface/Settings/Player_Abilities/Stealth_Enable_Disable" to="Menu_User_Interface/Settings/Player_Abilities/Stealth_Enable_Disable" method="stealth_enabled"]
+[connection signal="pressed" from="Menu_User_Interface/Custom_Skin_Selection_Screen/Red_Skin_Select_Button" to="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen" method="red_skin_select_button_pressed"]
+[connection signal="pressed" from="Menu_User_Interface/Custom_Skin_Selection_Screen/Green_Skin_Select_Button" to="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen" method="green_skin_select_button_pressed"]
+[connection signal="pressed" from="Menu_User_Interface/Custom_Skin_Selection_Screen/Yellow_Skin_Select_Button" to="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen" method="yellow_skin_select_button_pressed"]
+[connection signal="pressed" from="Menu_User_Interface/Custom_Skin_Selection_Screen/Dark_Blue_Skin_Select_Button" to="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen" method="dark_blue_skin_select_button_pressed"]
+[connection signal="pressed" from="Menu_User_Interface/Custom_Skin_Selection_Screen/Orange_Skin_Select_Button" to="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen" method="orange_skin_select_button_pressed"]
+[connection signal="pressed" from="Menu_User_Interface/Custom_Skin_Selection_Screen/Purple_Skin_Select_Button" to="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen" method="purple_skin_select_button_pressed"]
+[connection signal="pressed" from="Menu_User_Interface/Custom_Skin_Selection_Screen/White_Skin_Select_Button" to="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen" method="white_skin_select_button_pressed"]
+[connection signal="pressed" from="Menu_User_Interface/Custom_Skin_Selection_Screen/Black_Skin_Select_Button" to="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen" method="black_skin_select_button_pressed"]
+[connection signal="pressed" from="Menu_User_Interface/Custom_Skin_Selection_Screen/Light_Pink_Skin_Select_Button" to="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen" method="light_pink_skin_select_button_pressed"]
+[connection signal="pressed" from="Menu_User_Interface/Custom_Skin_Selection_Screen/Cyan_Skin_Select_Button" to="Menu_User_Interface/Game_Base_Screen/Player_Skin_Interface_Base_Screen" method="cyan_skin_select_button_pressed"]
+[connection signal="pressed" from="Menu_User_Interface/Guide/Player Connect Guide Button" to="Start_Menu_Screen_Camera" method="_go_player_connect_guide_screen"]
+[connection signal="pressed" from="Menu_User_Interface/Guide/Player Control Guide Button" to="Start_Menu_Screen_Camera" method="_go_player_controls_guide_screen"]
+[connection signal="pressed" from="Menu_User_Interface/Guide/Go Main Screen" to="Start_Menu_Screen_Camera" method="_go_back_to_main_menu_from_settings"]
+[connection signal="pressed" from="Menu_User_Interface/Player Connect Guide/Go Main Screen" to="Start_Menu_Screen_Camera" method="_go_back_to_main_menu_from_settings"]
+[connection signal="pressed" from="Player Controls Guide/Go Main Screen" to="Start_Menu_Screen_Camera" method="_go_back_to_main_menu_from_settings"]
+[connection signal="pressed" from="Post-Match Interface/Rematch" to="Start_Menu_Screen_Camera" method="_go_rematch"]
+[connection signal="pressed" from="Post-Match Interface/Main Menu" to="Start_Menu_Screen_Camera" method="_go_back_to_main_menu_from_post_game"]

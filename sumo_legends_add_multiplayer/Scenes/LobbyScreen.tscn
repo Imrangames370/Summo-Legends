@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://clko1aa8npj6v"]
+
+[ext_resource type="Script" uid="uid://bmlgm85c2vuy" path="res://Code/multiplayer/LobbyScreen.gd" id="1_km3x7"]
+
+[node name="LobbyScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_km3x7")
+
+[node name="LobbyListContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 300.0
+offset_bottom = 400.0
+
+[node name="LobbyLabel" type="Label" parent="LobbyListContainer"]
+layout_mode = 2
+text = "Loading lobbies…
+"

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1ov7otimd3q6"]
+
+[ext_resource type="Script" uid="uid://dwwah0ytl8f1t" path="res://Scenes/multiplayer_player.gd" id="1_3bc74"]
+
+[node name="MultiplayerSumoRingScene" type="Node"]
+
+[node name="Players" type="Node" parent="."]
+
+[node name="Multiplayer_Player" type="Node3D" parent="Players"]
+script = ExtResource("1_3bc74")
